@@ -1,7 +1,10 @@
 
- 
 #include <stdio.h>
+
+/* Function declaration */
 int sumOfDigits(int num);
+
+
 int main()
 {
     int num, sum;
@@ -15,6 +18,11 @@ int main()
     
     return 0;
 }
+
+
+/**
+ * Recursive function to find sum of digits of a number
+ */
 int sumOfDigits(int num)
 {
     // Base condition
@@ -23,4 +31,3 @@ int sumOfDigits(int num)
         
     return ((num % 10) + sumOfDigits(num / 10));
 }
-Output
